@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+coverage
+node_modules
+gulpfile.js
+tasks/
+npm-debug.log

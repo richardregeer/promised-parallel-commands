@@ -1,0 +1,35 @@
+verbose: false
+instrumentation:
+    root: .
+    default-excludes: true
+    excludes:
+      ["gulpfile.js",
+       "tasks/**",
+       "coverage/**",
+       "lib/index.js"]
+    embed-source: false
+    variable: __coverage__
+    compact: true
+    preserve-comments: false
+    complete-copy: false
+    save-baseline: false
+    baseline-file: ./coverage/coverage-baseline.json
+    include-all-sources: true
+    include-pid: false
+reporting:
+    print: summary
+    reports:
+        - html
+        - text
+    watermarks:
+        statements: [75, 95]
+        lines: [75, 95]
+        functions: [75, 95]
+        branches: [75, 95]
+check:
+    global:
+        statements: 95
+        lines: 95
+        branches: 95
+        functions: 95
+        excludes: []

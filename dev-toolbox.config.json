@@ -1,0 +1,29 @@
+{
+  "tasks": {
+    "codestyle": {
+      "source": ["lib/**/*.js", "tests/**/*.js"],
+      "options": {
+        "fix": true
+      }
+    },
+    "syntax": {
+      "source": ["lib/**/*.js", "tests/**/*.js"]
+    },
+    "tests-coverage": {
+      "source": "lib/**/*.js",
+      "tests": "tests/unit/**/*.js",
+      "options": {
+        "ui": "exports"
+      }
+    },
+    "tests": {
+      "source": ["tests/unit/**/*.js"],
+      "options": {
+        "ui": "exports"
+      }
+    },
+    "watch-tests": {
+      "watch": ["tests/unit/**/*.js", "lib/**/*.js"]
+    }
+  }
+}
