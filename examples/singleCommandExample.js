@@ -1,9 +1,7 @@
 'use strict';
 
-var Command = require('../lib/Command');
-var CommandRunner = require('../lib/CommandRunner');
-
-var commandRunner = new CommandRunner(require('child_process').spawn, process);
+var Command = require('promised-parallel-commands').Command;
+var commandRunner = require('promised-parallel-commands').createCommandRunner();
 
 var command = new Command('ls', ['-la']);
 

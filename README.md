@@ -57,7 +57,7 @@ commandRunner.runCommand([command1, command2], 2)
 ```
 
 # Examples
-More code examples can be found in the [examples](https://github.com/richardregeer/promised-parallel-commands/examples) folder.
+More code examples can be found in the [examples](https://github.com/richardregeer/promised-parallel-commands/tree/master/examples) folder.
 
 # Tests
 The tests are using [mocha](https://github.com/mochajs/mocha).
